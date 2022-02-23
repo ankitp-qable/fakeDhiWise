@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone11ProX29VM" type="com.rahulsapplication.app.modules.iphone11prox29.data.viewmodel.Iphone11ProX29VM"/>
+    </data>
+    <LinearLayout android:id="@+id/linearGroup147"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegray_51">
+        <ImageView android:clickable="true"
+            android:id="@+id/imageVector36"
+            android:layout_height="@dimen/_18pxh"
+            android:layout_marginEnd="@dimen/_26pxh"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="@dimen/_10pxh"
+            android:scaleType="fitXY" android:src="@drawable/img_vector36"/>
+        <TextView android:gravity="start" android:id="@+id/txtPayment"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_48pxv"
+            android:layout_width="wrap_content"
+            android:text="@{iphone11ProX29VM.iphone11ProX29Model.txtPayment}"
+            style="@style/txtDMSansbold24_1" tools:text="@string/lbl_payment"/>
+        <LinearLayout android:id="@+id/linearForm"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_21pxh"
+            android:layout_marginTop="@dimen/_50pxv"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <TextView android:gravity="top|start"
+                android:id="@+id/txtCardDetails"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_width="wrap_content"
+                android:text="@{iphone11ProX29VM.iphone11ProX29Model.txtCardDetails}"
+                style="@style/txtSkModernistskmodernistregular12" tools:text="@string/lbl_card_details"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_15"
+                android:hint="@string/msg_enter_card_deta"
+                android:id="@+id/etEnterCardDeta"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_16pxv"
+                android:paddingStart="@dimen/_23pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@={iphone11ProX29VM.iphone11ProX29Model.etEnterCardDetaValue}"
+                android:textColorHint="@color/gray_500" style="@style/etSolidRoundedOutline_2"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearGroup148"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <LinearLayout android:id="@+id/linearForm1"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_21pxh"
+                android:layout_weight="0.9" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtExpDate"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:text="@{iphone11ProX29VM.iphone11ProX29Model.txtExpDate}"
+                    style="@style/txtSkModernistskmodernistregular12" tools:text="@string/lbl_exp_date"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_15"
+                    android:hint="@string/lbl_dd_mm"
+                    android:id="@+id/etDDMM"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@={iphone11ProX29VM.iphone11ProX29Model.etDDMMValue}"
+                    android:textColorHint="@color/gray_500" style="@style/etSolidRoundedOutline_2"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearForm2"
+                android:layout_gravity="top"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20pxh"
+                android:layout_marginStart="@dimen/_20pxh"
+                android:layout_weight="0.9" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:gravity="top|start"
+                    android:id="@+id/txtCVV"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:text="@{iphone11ProX29VM.iphone11ProX29Model.txtCVV}"
+                    style="@style/txtSkModernistskmodernistregular12" tools:text="@string/lbl_cvv"/>
+                <EditText
+                    android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_15"
+                    android:hint="@string/lbl_enter_cvv"
+                    android:id="@+id/etEnterCVV"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_16pxv"
+                    android:paddingStart="@dimen/_10pxh"
+                    android:paddingTop="@dimen/_15pxv"
+                    android:singleLine="true"
+                    android:text="@={iphone11ProX29VM.iphone11ProX29Model.etEnterCVVValue}"
+                    android:textColorHint="@color/gray_500" style="@style/etSolidRoundedOutline_2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:clickable="true"
+            android:id="@+id/frameButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_31pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_361pxv"
+            android:layout_width="match_parent" style="@style/groupStylecornerRadius">
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtPayNow"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_15pxv"
+                android:layout_marginEnd="@dimen/_141pxh"
+                android:layout_marginStart="@dimen/_141pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:text="@{iphone11ProX29VM.iphone11ProX29Model.txtPayNow}"
+                style="@style/txtSkModernistskmodernistbold14" tools:text="@string/lbl_pay_now"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

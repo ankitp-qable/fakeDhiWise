@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.rahulsapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.rahulsapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox28.ui.Iphone11ProX28Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox25.ui.Iphone11ProX25Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox22.ui.Iphone11ProX22Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox33.ui.Iphone11ProX33Activity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.rahulsapplication.app.modules.iphone11prox13.ui.Iphone11ProX13Activity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox18.ui.Iphone11ProX18Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox30.ui.Iphone11ProX30Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox19.ui.Iphone11ProX19Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox14.ui.Iphone11ProX14Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox17.ui.Iphone11ProX17Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox27.ui.Iphone11ProX27Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox23.ui.Iphone11ProX23Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox29.ui.Iphone11ProX29Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox16.ui.Iphone11ProX16Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox1.ui.Iphone11ProX1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.rahulsapplication.app.modules.iphone11prox15.ui.Iphone11ProX15Activity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

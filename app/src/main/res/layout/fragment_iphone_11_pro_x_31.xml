@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone11ProX31VM" type="com.rahulsapplication.app.modules.iphone11prox31.data.viewmodel.Iphone11ProX31VM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearGroup172"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_53pxv"
+            android:paddingEnd="@dimen/_14pxh" android:paddingStart="@dimen/_15pxh">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerGroup171"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_20pxh}" tools:itemCount="3" tools:listitem="@layout/row_iphone_11_pro_x_32"/>
+            <TextView android:gravity="top|center"
+                android:id="@+id/txtGoToHome"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_141pxh"
+                android:layout_marginStart="@dimen/_132pxh"
+                android:layout_marginTop="@dimen/_80pxv"
+                android:layout_width="wrap_content"
+                android:text="@{iphone11ProX31VM.iphone11ProX31Model.txtGoToHome}"
+                style="@style/txtRobotoregular14" tools:text="@string/lbl_go_to_home"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>
