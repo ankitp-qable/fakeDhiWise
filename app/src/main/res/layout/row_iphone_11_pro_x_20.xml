@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="iphone11ProX20RowModel" type="com.rahulsapplication.app.modules.iphone11prox19.data.model.Iphone11ProX20RowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameGroup"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_81pxh">
+        <androidx.appcompat.widget.AppCompatButton
+            android:gravity="center" android:id="@+id/btnPizza"
+            android:layout_height="@dimen/_86pxh"
+            android:layout_marginBottom="@dimen/_11pxv"
+            android:layout_marginEnd="@dimen/_7pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="@dimen/_64pxh"
+            android:text="@string/lbl_pizza" android:textAllCaps="false"
+            style="@style/btnSolidRounded" tools:text="@string/lbl_pizza"/>
+        <FrameLayout android:id="@+id/frameRectangle14"
+            android:layout_gravity="top|start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" style="@style/groupStylecornerRadius_2">
+            <TextView android:gravity="top|start" android:id="@+id/txt"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_51pxv"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginStart="@dimen/_27pxh"
+                android:layout_marginTop="@dimen/_30pxv"
+                android:layout_width="match_parent"
+                android:text="@{iphone11ProX20RowModel.txt}"
+                style="@style/txtDMSansbold24_2" tools:text="@string/lbl"/>
+        </FrameLayout>
+    </FrameLayout>
+</layout>
